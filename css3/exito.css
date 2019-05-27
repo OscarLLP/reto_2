@@ -1,0 +1,12 @@
+body{
+    background-color: hsl(200, 6%, 20%);
+    margin: 15%;
+}
+.description {
+    text-align: center;
+}
+
+.text,a{
+    color: white;
+    text-decoration: none;
+}

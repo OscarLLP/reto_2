@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.header{
+    background-color: #7ACC2D;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav ul li{
+    list-style: none;
+  
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #313337;
+    padding: 10px;
+}
+
+.nav ul li a:hover{
+    color: white;
+}
+
+.main_text{
+    padding: 14%;
+    text-align: center;
+}
+
+.section_main{
+    background-image:url("https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c12/images/curve.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.product{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 15px;
+    margin: 30px;
+    margin-top: -130px;
+    background-color: white;
+    width: 250px;
+}
+
+.product .products figure{
+    text-align: center;
+}
+
+.button{
+    background-color: #7ACC2D;
+    color: white;
+    width: 260px;
+    margin-top: 9px;
+      padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mentions{
+    justify-content: center;
+    display: flex;
+}
+
+.section_mentions{
+  
+    padding: 40px;
+    margin: 55px;
+    margin-top: 120px;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.image{
+    height: 200px;
+}
+
+.text_mentions{
+    text-align: center;
+}
+
+.section_end{
+    text-align: center;
+    padding: 10px;
+    margin: 9px;
+    margin-top: 40px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.footer{
+    
+    height: 50px;
+    background-color: #313337;
+    color: white;
+  
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+/**the @media query**/
+@media (max-width: 600px){
+    .section_main{
+        display: inherit;
+        height: auto;
+        justify-content: center;
+    }
+    .product{
+        margin-top: auto;
+    }
+    .mentions{
+        display: inherit;
+    }
+    .section_mentions{
+        margin-top: 0;
+        padding: 20px;
+    }
+}
+
+/**Animations**/
+
+.animate_nav{
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: animate_nav;
+    animation-name: animate_nav;
+}
+
+@keyframes animate_nav{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fadeInDouwn{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDouwn;
+    animation-name: fadeInDouwn;
+}
+
+    @keyframes fadeInDouwn{
+        from{
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%,0);
+            transform: translate3d(0, -100%,0)
+        }
+        to{
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0, 0 ,0)
+        }
+    }
+
+    .fadeInUp{
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+    }
+    
+        @keyframes fadeInUp{
+            from{
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%,0);
+                transform: translate3d(0, 100%,0)
+            }
+            to{
+                opacity: 1;
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0, 0 ,0)
+            }
+        }
